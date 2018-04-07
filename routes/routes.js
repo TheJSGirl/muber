@@ -1,5 +1,5 @@
+const driverController = require('../controllers/driver-controller');
+
 module.exports = app => {
-  app.get('/api', (req, res) => {
-    res.send({ hi: 'there' });
-  });
+  app.get('/api', driverController.greeting);
 };
